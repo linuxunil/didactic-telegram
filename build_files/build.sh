@@ -38,8 +38,8 @@ curl -Lo /tmp/MapleMono.zip "${MAPLE_URL}/MapleMono-NF.zip"
 curl -Lo /tmp/MapleMonoNF.zip "${MAPLE_URL}/MapleMono-NF-CN.zip"
 
 mkdir -p /usr/share/fonts/maple-mono
-unzip -q /tmp/MapleMono.zip -d /usr/share/fonts/maple-mono/
-unzip -q /tmp/MapleMonoNF.zip -d /usr/share/fonts/maple-mono/
+unzip -qo /tmp/MapleMono.zip -d /usr/share/fonts/maple-mono/
+unzip -qo /tmp/MapleMonoNF.zip -d /usr/share/fonts/maple-mono/
 fc-cache -f
 
 ### Keep KDE Plasma (don't remove it - Bazzite users want it for gaming)
