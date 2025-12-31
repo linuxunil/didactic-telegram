@@ -1,0 +1,14 @@
+version: "1"
+rules:
+  - base: main
+    upstream: ublue-os/image-template:main
+    mergeMethod: merge
+    mergeUnstable: false
+    assignees:
+      - ${author}
+    reviewers:
+      - ${author}
+
+# Pull app will check for upstream changes and create PRs automatically
+# Upstream: https://github.com/ublue-os/image-template
+# Manual trigger: https://pull.git.ci/check/${owner}/${repo}
