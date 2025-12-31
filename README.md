@@ -1,6 +1,35 @@
-# image-template
+# Bazzite + DMS (Zirconium Merge)
 
-This repository is meant to be a template for building your own custom [bootc](https://github.com/bootc-dev/bootc) image. This template is the recommended way to make customizations to any image published by the Universal Blue Project.
+A custom [bootc](https://github.com/bootc-dev/bootc) image that merges **Bazzite's gaming-optimized software stack** with **Zirconium's DankMaterialShell (DMS)** and **Niri compositor**.
+
+## What This Image Provides
+
+- **Bazzite Base**: All gaming tools, optimizations, and preinstalled software from [Bazzite](https://bazzite.gg)
+- **Niri Compositor**: Scrollable tiling Wayland compositor from [Zirconium](https://github.com/zirconium-dev/zirconium)
+- **DankMaterialShell (DMS)**: Modern desktop shell with integrated launcher, notifications, and settings
+- **Dual Sessions**: Choose between KDE Plasma (for gaming) or Niri+DMS (for productivity) at login
+
+## Features
+
+- ✅ Keep all Bazzite gaming features (Steam, Lutris, ProtonGE, etc.)
+- ✅ KDE Plasma session available for gaming and full desktop experience
+- ✅ Niri tiling compositor with DMS for a modern tiling workflow
+- ✅ Your existing Niri configs preserved
+- ✅ Both sessions coexist - switch at login screen
+
+## Quick Start
+
+This image is based on `ghcr.io/ublue-os/bazzite:stable` and adds:
+- [Niri](https://github.com/YaLTeR/niri) compositor via COPR (yalter/niri)
+- [DankMaterialShell](https://danklinux.com/docs/dankmaterialshell) via COPR (avengemedia/dms)
+- Additional Wayland tools (waybar, fuzzel, mako, swaylock, etc.)
+- Maple Mono font for better terminal experience
+
+After rebasing to this image, you can:
+1. Log out of your current session
+2. Select "Niri" from the session dropdown at the login screen
+3. Use DMS with `Mod+Space` (app launcher), `Mod+N` (notifications), etc.
+4. Return to KDE Plasma anytime for gaming or traditional desktop use
 
 # Community
 
